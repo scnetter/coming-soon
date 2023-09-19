@@ -2,12 +2,21 @@ body, html {
     min-width: 100%;
     min-height: 100vh;
     background-color: #FFFFFF;
+    margin: auto 0;
 }
 #logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
     padding-top: 10px;
     height: 48px;
     width: 71px;
+}
+
+#athlete {
+    height: 250px;
+    width: 100%;
+    background: url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat right top;
+    background-size: cover;
 }
