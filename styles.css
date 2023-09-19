@@ -1,6 +1,13 @@
-.logo {
+body, html {
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
+#logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
+    height: 48px;
+    width: 71px;
 }
