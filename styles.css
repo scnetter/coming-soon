@@ -1,9 +1,58 @@
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
 body, html {
     min-width: 100%;
     min-height: 100vh;
     background-color: #FFFFFF;
     margin: auto 0;
 }
+
+h2, p {
+    margin: 0;
+    font-family: AdiHaus;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #423A3A;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 48px;
+    font-style: normal;
+    line-height: 50px; /* 87.5% */
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 28px;
+    margin-top: 20px;
+    color: #333333;
+    font-size: 14px;
+}
+
+h2.red {
+    color: #CD3A24;
+    font-weight: 400;
+    line-height: 42px; /* 87.5% */
+    margin-bottom: 10px;
+}
+
+h2.gray {
+    color: #423A3A;
+}
+
 #logo {
     display: block;
     margin-left: auto;
@@ -19,4 +68,23 @@ body, html {
     width: 100%;
     background: url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat right top;
     background-size: cover;
+}
+
+.all-content-container {
+    padding: 20px 30px;
+}
+
+.text-content-container {
+    text-align: center;
+    width: 100%;
+}
+
+
+
+#body-text {
+    color: var(--Gray-1, #333);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px; /* 200% */
+    margin: 0 32px 25px 32px;
 }
