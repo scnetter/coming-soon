@@ -15,10 +15,14 @@ body, html {
     min-width: 100%;
     min-height: 100vh;
     background-color: #FFFFFF;
-    margin: auto 0;
     font-family: AdiHaus;
+    margin: 0 auto;
 }
 
+.body-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
 h2, p {
     margin: 0;
 }
