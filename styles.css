@@ -16,11 +16,11 @@ body, html {
     min-height: 100vh;
     background-color: #FFFFFF;
     margin: auto 0;
+    font-family: AdiHaus;
 }
 
 h2, p {
     margin: 0;
-    font-family: AdiHaus;
 }
 
 h2 {
@@ -37,9 +37,30 @@ h2 {
 
 p {
     line-height: 28px;
-    margin-top: 20px;
+    margin: 20px 0 40px;
     color: #333333;
     font-size: 14px;
+}
+
+form {
+    display: flex;
+}
+
+input[type="text"] {
+    padding: 0 20px;
+    width: 75%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 20%;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 h2.red {
