@@ -4,12 +4,13 @@
     font-weight: normal;
     font-style: normal;
   }
-  @font-face {
-    font-family: "AdiHaus";
-    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-  }
+
+@font-face {
+font-family: "AdiHaus";
+src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+font-weight: bold;
+font-style: normal;
+}
 
 body, html {
     min-width: 100%;
@@ -19,10 +20,15 @@ body, html {
     margin: 0 auto;
 }
 
+body {
+    display: flex;
+}
+
 .body-container {
     max-width: 400px;
     margin: 0 auto;
 }
+
 h2, p {
     margin: 0;
 }
@@ -37,6 +43,7 @@ h2 {
     line-height: 50px; /* 87.5% */
     letter-spacing: 5px;
     font-weight: 700;
+    margin-bottom: 24px;
 }
 
 p {
@@ -71,7 +78,6 @@ h2.red {
     color: #CD3A24;
     font-weight: 400;
     line-height: 42px; /* 87.5% */
-    margin-bottom: 10px;
 }
 
 h2.gray {
@@ -88,7 +94,7 @@ h2.gray {
     width: 71px;
 }
 
-#athlete {
+#athlete-mobile {
     height: 250px;
     width: 100%;
     background: url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat right top;
@@ -112,4 +118,47 @@ h2.gray {
     font-weight: 400;
     line-height: 28px; /* 200% */
     margin: 0 32px 25px 32px;
+}
+
+.desktop-image {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        background-image: url("https://assets.codepen.io/6060109/destop-bg.png");
+        background-size: cover;
+    }
+
+    h2 {
+        font-size: 64px;
+        text-align: left;
+    }
+
+    #athlete-mobile {
+        display: none;
+    }
+
+    .mobile-container {
+        width: 50%;
+    }
+
+    .text-content-container {
+        text-align: left;
+    }
+
+    .desktop-container {
+        display: block;
+        width: 50%;
+        clip-path: polygon(0 1%, 100% 1%, 100% 100%, 35% 100%);
+        background-image: url("https://assets.codepen.io/6060109/athlete-big.png");
+        background-size: cover;
+
+    }
+
+    #logo {
+        margin: 30px 30px 100px;
+    }
+    
 }
